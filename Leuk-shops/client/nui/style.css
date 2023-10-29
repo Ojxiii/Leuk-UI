@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik&display=swap');
+body {
+    display: flex;
+}
+
+:root {
+--mainass: #141517;
+--notmainass:#111112;
+}
+
+
+.mianshoppy {
+    position: absolute;
+    background: var(--mainass);
+    box-shadow: 0 0 0.5vh 0.2vh #00000063;
+    width: 30%;
+    height: 80%;
+    border-radius: 0.4vh;
+    overflow: hidden;
+
+    top: 50%;
+    left: 17%;
+    transform: translate(-50%,-50%);
+
+    animation: openBoob 0.2s;
+}
+
+.shopforhead {
+    position: relative;
+    width: 100%;
+    height: 3vh;
+    line-height: 3vh;
+    background: var(--notmainass);
+    border-bottom: solid 0.3vh;
+    border-color: white;
+    text-shadow: 0 0 3px rgba(0, 0, 0, 0.514);
+    color: white;
+    font-size: 1.6vh;
+    padding: 0.4vh;
+    font-family: 'Rubik', sans-serif;
+    font-weight: bold;
+    transition: 0.2s;
+}
+
+.shopitem {
+    position: relative;
+    display: inline-block;
+    background: var(--notmainass);
+    box-shadow: 0 0 0.3vh #000000c7;
+    width: 24.6vh;
+    height: 16vh;
+    left: 26%;
+    top: 7.5vh;
+    margin: 0.2VH;
+    transform: translate(-50%,-50%);
+
+
+}
+
+.shopitemPurchase {
+    position: absolute;
+    background: #fd5d80;
+    width: 80%;
+    height: 3vh;
+    right: 2vh;
+    bottom: 1vh;
+    margin-top: 0.3vh;
+    border-radius: 0.4vh;
+    /* transform: translate(-50%,-50%); */
+    line-height: 3vh;
+    text-align: center;
+    text-shadow: 0 0 0.3vh rgba(0, 0, 0, 0.514);
+    color: white;
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+.shopitemPurchase:hover {
+    background: #c44a64;
+}
+
+
+.shopitem > p {
+    position: relative;
+    top: 1.3vh;
+    left: 1.3vh;
+    font-family: 'Rubik', sans-serif;
+    /* font-weight: bold; */
+    color: white;
+    font-size: 1.2vh;
+}
+
+
+::-webkit-scrollbar{
+    display: none;
+}
+
+#shopitems {
+    position: relative;
+    overflow: auto;
+    height: 90%;
+    margin-top: 20px;
+}
+
+
+
+@keyframes openBoob {
+    0% {
+        transform: translate(-50%,-50%) scale(0);
+    }
+}
